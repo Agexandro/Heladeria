@@ -52,13 +52,12 @@ if($tamaño>0){
         $categoria = $row['nombre_categoria'];
         $descripcion = $row['descripcion'];
         $icon = $row['icono'];
-        $prod = $row['productos'];
         echo("
         <tbody>
           <tr>
             <th scope='row'>$categoria</th>
             <td>$descripcion</td>
-            <td><a  class='btn btn-primary' href='dao/delete.php?id=$id&content=$icon&producto=$prod'>Eliminar</a></td>
+            <td><a  class='btn btn-primary' href='dao/delete.php?id=$id&content=$icon'>Eliminar</a></td>
             <td><a class='btn btn-primary' href='dao/delete.php';>Actualizar</a></td>
           </tr>
           </tbody>

@@ -7,7 +7,7 @@ $prod = "cards.php";
 $icon="images/".$newFileName;
 $sql = "insert into categorias(nombre_categoria,descripcion,icono,productos) values('$nombre','$desc','$icon','$prod')";
 if(mysqli_query($conn,$sql)){
-    header("location:../index2.php");
+    header("location:../add_cat.php");
 }else{
     echo ('Datos NO Insertados: '.mysqli_error());
 }
