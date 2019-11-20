@@ -1,0 +1,13 @@
+body{
+    background-image: url("../images/helado.jpg");
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
