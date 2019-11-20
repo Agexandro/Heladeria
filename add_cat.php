@@ -45,7 +45,6 @@ $contador = 0;
 $consulta = select('categorias',null);
 $tamaño =  mysqli_num_rows($consulta);
 if($tamaño>0){
-  
     while($row = mysqli_fetch_assoc($consulta)){
         $contador=$contador+1;
         $id=$row['idcategoria'];
