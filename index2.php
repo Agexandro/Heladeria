@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="librerias/bootstrap.min.css">
 </head>
 <body>
+<div class="row">
+<div class="col">
 <form class='container' enctype="multipart/form-data" method = "post" action="dao/insert.php">
 <header><h1>Agregar una categoria</h1></header>
   <div class='form-group'>
@@ -24,11 +26,11 @@
   </div>
   <button type='submit' class='btn btn-primary' name="uploadBtn" value="Upload">Agregar</button>
 </form>
-
-<hr>
-
+</div>
+<div class="col">
 <table class='container table'>
   <header class="container"><h1>Tabla de categorias</h1></header>
+  <br>
         <thead>
           <tr>
             <th scope='col'>Categoria</th>
@@ -40,7 +42,7 @@
 <?php
 require("dao/select.php");
 $contador = 0;
-$consulta = select('categorias');
+$consulta = select('categorias',null);
 $tamaño =  mysqli_num_rows($consulta);
 if($tamaño>0){
   
@@ -66,5 +68,8 @@ if($tamaño>0){
   }
 ?>
       </table>
+
+</div>
+</div>
 </body>
 </html>

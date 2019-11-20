@@ -1,16 +1,16 @@
 <?php
 require("dao/select.php");
 $contador = 0;
-$consulta = select('categorias',null);
+$consulta = select('productos',);
 $tamaño =  mysqli_num_rows($consulta);
 if($tamaño>0){
     echo("<div class='container'>");
     while($row = mysqli_fetch_assoc($consulta)){
         $contador=$contador+1;
-        $categoria = $row['nombre_categoria'];
+        $producto = $row['nombre_producto'];
         $descripcion = $row['descripcion'];
         $icono = $row['icono'];
-        $link = $row['productos'];
+        $precio = $row['precio'];
 
         if($contador==1){
             echo("<div class='row'>");
@@ -20,16 +20,16 @@ if($tamaño>0){
              <div class='card'>
                 <img src='$icono' height= '300px' class='card-img-top'>
             <div class='card-body'>
-                <h5 class='card-title'>$categoria</h5>
+                <h5 class='card-title'>$producto</h5>
                 <p class='card-text'>$descripcion</p>
-                <a href='$link' class='btn btn-primary'>Ver mas</a>
+                <h5 class='card-title'>$precio</h5>
             </div>
         </div> 
             
             </div>
         ");
 
-        if($contador==3 || $contador==$tamaño){
+        if($contador==4 || $contador==$tamaño){
             echo("</div><br>");
             $contador=0;
         }
