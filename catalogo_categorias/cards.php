@@ -7,6 +7,7 @@ if($tamaño>0){
     echo("<div class='container'>");
     while($row = mysqli_fetch_assoc($consulta)){
         $contador=$contador+1;
+        $idcat = $row['idcategoria'];
         $categoria = $row['nombre_categoria'];
         $descripcion = $row['descripcion'];
         $icono = $row['icono'];
@@ -22,7 +23,7 @@ if($tamaño>0){
             <div class='card-body'>
                 <h5 class='card-title'>$categoria</h5>
                 <p class='card-text'>$descripcion</p>
-                <a href='$link' class='btn btn-primary'>Ver mas</a>
+                <a href='$link?id=$idcat' class='btn btn-primary'>Ver productos</a>
             </div>
         </div> 
             

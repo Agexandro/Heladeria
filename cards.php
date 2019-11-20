@@ -1,7 +1,8 @@
 <?php
 require("dao/select.php");
 $contador = 0;
-$consulta = select('productos',);
+$idcategoria = $_GET['id'];
+$consulta = select('productos',$idcategoria);
 $tamaño =  mysqli_num_rows($consulta);
 if($tamaño>0){
     echo("<div class='container'>");
