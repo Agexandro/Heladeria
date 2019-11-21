@@ -10,7 +10,7 @@
 <body>
 <div class="row">
 <div class="col">
-<form class='container' enctype="multipart/form-data" method = "post" action="dao/insert.php">
+<form class='container' enctype="multipart/form-data" method = "post" action="dao/insert.php?id=1">
 <header><h1>Agregar una categoria</h1></header>
   <div class='form-group'>
     <label for='nombre_cat'>Nombre de la categoria</label>
@@ -56,7 +56,7 @@ if($tamaño>0){
           <tr>
             <th scope='row'>$categoria</th>
             <td>$descripcion</td>
-            <td><a  class='btn btn-primary' href='dao/delete.php?id=$id&content=$icon'>Eliminar</a></td>
+            <td><a  class='btn btn-primary' href='dao/delete.php?ref=1&id=$id&content=$icon'>Eliminar</a></td>
             <td><a class='btn btn-primary' href='dao/delete.php';>Actualizar</a></td>
           </tr>
           </tbody>
