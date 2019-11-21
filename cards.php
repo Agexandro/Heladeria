@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="librerias/bootstrap.min.css">
 <?php
 require("dao/select.php");
 $contador = 0;
@@ -23,10 +24,9 @@ if($tamaño>0){
             <div class='card-body'>
                 <h5 class='card-title'>$producto</h5>
                 <p class='card-text'>$descripcion</p>
-                <h5 class='card-title'>$precio</h5>
+                <h5 class='card-title'>Precio: $ $precio</h5>
             </div>
         </div> 
-            
             </div>
         ");
 

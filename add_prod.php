@@ -27,7 +27,7 @@
   </div>
   <div class='form-group'>
     <label for='icono'>Seleccione la imagen</label>
-    <input type="file"  id="icono" name="icon" ></input>
+    <input type="file"  id="icono" name="icon" require></input>
   </div>
 
   <select name='categorias'>

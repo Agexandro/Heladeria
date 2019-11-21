@@ -1,4 +1,5 @@
-<?php require('conexion/conectar.php');
+<?php 
+require('conexion/conectar.php');
 
 $sql = 'update categorias set nombre_categoria = "Paletas" , descripcion = "Nueva descripcion" where idcategoria=2';
 

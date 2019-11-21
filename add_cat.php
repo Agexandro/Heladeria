@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agregar una categoria</title>
     <link rel="stylesheet" href="librerias/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 <body>
 <div class="row">
