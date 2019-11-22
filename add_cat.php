@@ -59,7 +59,7 @@ if($tamaño>0){
             <th scope='row'>$categoria</th>
             <td>$descripcion</td>
             <td><a  class='btn btn-primary' href='dao/delete.php?ref=1&id=$id&content=$icon'>Eliminar</a></td>
-            <td><a class='btn btn-primary' href='dao/delete.php';>Actualizar</a></td>
+            <td><a class='btn btn-primary' href='update.php?id=$id';>Actualizar</a></td>
           </tr>
           </tbody>
         ");
