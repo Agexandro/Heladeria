@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+<title>To do list</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $.get("../services/service.php", function(data, status){
+console.log(data);
+var toDoItems=JSON.parse(data);
+for(var i=0;i<toDoItems.lenght;i++){
+    var Item="idproducto: "+ toDoItems[i].itemId +
+    " precio:" + toDoItems[i].itemPrecio +
+    " Descripcion:" + toDoItems[i].itemDescripcion
+
+}
+
+    });
+    });
+
+</script>
+</head>
+<body>
+<div>
+<h1>To do List</h1>
+<ol id="myitems" >
+
+</ol>
+</div>
+<div>
+    <h2>Add New Item</h2>
+    <!-- <label>Item Name:</label>
+    <input type="text" name="Nombre" /><br>
+    <label>Precio:</label>
+    <input type="number"name="Precio" /><br>
+    <label>Descripcion:</label>
+    <input type="text"name="Descripcion" /><br>
+     -->
+</div>
+</body>
+</html>
