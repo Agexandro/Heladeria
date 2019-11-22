@@ -1,3 +1,8 @@
+<link rel="stylesheet" href="librerias/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="librerias/jquery-3.4.1.min.js"></script>
+    <script src="librerias/bootstrap.min.js"></script>
+
 <nav class="navbar navbar-dark bg-dark">
   <!-- Navbar content -->
   <a href="index.php"><h1>Heladeria</h1></a>
@@ -32,4 +37,5 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  <hr>
 </div>

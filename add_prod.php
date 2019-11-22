@@ -27,10 +27,10 @@
   </div>
   <div class='form-group'>
     <label for='icono'>Seleccione la imagen</label>
-    <input type="file"  id="icono" name="icon" require></input>
+    <input type="file"  id="icono" name="icon" required></input>
   </div>
 
-  <select name='categorias'>
+  <select name='categorias' required>
 <option value='' disabled selected>Seleccione una categoria...</option>
 <?php
 require("dao/select.php");
@@ -61,11 +61,10 @@ echo("</select>");
   <br>
         <thead>
           <tr>
-            <th scope='col'>producto</th>
-            <th scope='col'>descripcion</th>
-            <th scope='col'>precio</th>
+            <th scope='col'>Producto</th>
+            <th scope='col'>Descripcion</th>
+            <th scope='col'>Precio</th>
             <th scope='col'>Eliminar</th>
-            <th scope='col'>Actualizar</th>
           </tr>
         </thead>
 <?php
@@ -87,7 +86,6 @@ if($tamaño>0){
             <td>$descripcion</td>
             <td>$precio</td>
             <td><a  class='btn btn-primary' href='dao/delete.php?ref=2&id=$id&content=$icon'>Eliminar</a></td>
-            <td><a class='btn btn-primary' href='dao/delete.php';>Actualizar</a></td>
           </tr>
           </tbody>
         ");

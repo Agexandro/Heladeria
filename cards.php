@@ -1,5 +1,17 @@
-<link rel="stylesheet" href="librerias/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos</title>
+    <link rel="stylesheet" href="librerias/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
 <?php
+require("assesst/header.php");
 require("dao/select.php");
 $contador = 0;
 $idcategoria = $_GET['id'];
@@ -30,7 +42,7 @@ if($tamaño>0){
             </div>
         ");
 
-        if($contador==4 || $contador==$tamaño){
+        if($contador==3 || $contador==$tamaño){
             echo("</div><br>");
             $contador=0;
         }
@@ -39,3 +51,5 @@ if($tamaño>0){
 }
 
 ?>
+</body>
+</html>

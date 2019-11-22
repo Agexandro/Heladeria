@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<form class='container' enctype="multipart/form-data" method = "post" action="dao/update.php?ref=1&id=10009">
+<form class='container' enctype="multipart/form-data" method = "post" action="dao/update.php?ref=1&id=<?php echo($_GET['id'].""); ?>">
 <header><h1>Actualizar categoria</h1></header>
   <div class='form-group'>
     <label for='nombre_cat'>Nuevo nombre de la categoria</label>

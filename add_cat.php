@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agregar una categoria</title>
     <link rel="stylesheet" href="librerias/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
+
 
 </head>
 <body>
@@ -59,7 +59,7 @@ if($tamaño>0){
             <th scope='row'>$categoria</th>
             <td>$descripcion</td>
             <td><a  class='btn btn-primary' href='dao/delete.php?ref=1&id=$id&content=$icon'>Eliminar</a></td>
-            <td><a class='btn btn-primary' href='update.php?id=$id';>Actualizar</a></td>
+            <td><a class='btn btn-primary' href='update.php?id=$id&content=$icon';>Actualizar</a></td>
           </tr>
           </tbody>
         ");
